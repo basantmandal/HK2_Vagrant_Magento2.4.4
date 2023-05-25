@@ -1,7 +1,7 @@
 # HK2 Vagrant Magento2.4.4
 
 ## Introduction
-This Box is fully compatible for Magento 2.4.4. Includes Screenshot and Vagrantfile on how to use it.
+This Box is fully compatible for Magento 2.4.4. Includes Screenshot and Vagrantfile on how to use it. Detailed Information can be found at - [https://github.com/basantmandal/HK2_Vagrant_Magento2.4.4](https://github.com/basantmandal/HK2_Vagrant_Magento2.4.4)
 
 ## Prerequisites
 Vagrant 2.3.x
@@ -70,7 +70,7 @@ Keys look like :-
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-    config.vm.box = "basantmandal/HK2_Vagrant_Magento2.4.4"
+    config.vm.box = "basantmandal/HK2_Vagrant_Magento2.4.5"
     #config.vm.box_version = "1.0.1"
     config.vm.network "private_network", ip: "192.168.2.183"
 
@@ -112,25 +112,8 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-## Sample Vagrant File
-
-- [Click to see the Vagrantfile](./Vagrantfile)
-
 ## Links
-
 - [Magento Frontend (http://www.magento244.store)](http://www.magento244.store)
 - [Magento Backend (http://www.magento244.store/admin)](http://www.magento244.store/admin)
 - [Adminer (http://adminer.magento244.store)](http://adminer.magento244.store)
 - [MailHog (http://www.magento244.store:8025)](http://www.magento244.store:8025)
-
-## Some of the Vagrant Box Screenshots
-
-[![Adminer Login](dist/image/adminer_login.png)]()
-
-[![Adminer Database](dist/image/adminer_database.png)]()
-
-[![Magento Frontend](dist/image/magento_frontend.png)]()
-
-[![Magento Admin](dist/image/magento_admin.png)]()
-
-[![Magento Admin Dashboard](dist/image/magento_admin_dashboard.png)]()
